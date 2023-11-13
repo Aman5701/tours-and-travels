@@ -1,0 +1,868 @@
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: 18%;
+}
+
+/*.............................................2ND NAVBAR CSS STARTS................................................*/
+#navi_bar
+{
+    z-index: 999;
+}
+#collapsibleNavbar .nav-link:hover
+{
+    background-color: #383838;
+}
+#book_now
+{
+    margin-right: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+#book_now:hover
+{
+    background-color: #011c04;
+}
+
+#bali
+{
+    text-decoration: none;
+    color: chartreuse;
+    font-family: cursive;
+}
+#bali:hover
+{
+    color: chartreuse;
+}
+.p1
+{
+    border-style: groove;
+    border-color: #d5f260;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #dff586;
+    color: rgb(18, 18, 19);
+    margin-left: 70px;
+    width: 100px;
+    text-align: center;
+}
+.p2
+{
+    margin-top: -50px;
+    margin-right: -100px;
+    color: rgb(248, 247, 247);
+}
+.p3
+{
+    margin-top: 60px;
+    margin-right: 100px;
+    color: rgb(248, 247, 247);
+}
+.price
+{
+    text-align: right;
+    margin-right: 50px;
+    color: #48fa01;
+    font-family: cursive;
+    margin-right: -190px;
+}
+
+i {
+	margin-right: 10px;
+}
+
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+	padding: 15px;
+	color: #03d61b;
+}
+.navbar-mainbg{
+	background-color: #020c4d;
+	padding-bottom: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: rgb(237, 230, 230);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #154403;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #020c4d;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+/*.............................................2ND NAVBAR CSS ENDS................................................*/
+
+
+
+/*-----------------------------------------------EXPANDING IMAGE STARTS----------------------------*/
+.panel
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition:all 700ms ease-in;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  .container {
+    display: flex;
+    width: 90vw;
+  }
+/*-----------------------------------------------EXPANDING IMAGE ENDS----------------------------*/
+
+
+
+/* -----------------------------------------MAIN CONTENT STARTS---------------------------------- */
+
+.pakg_ovr{
+    min-height: fit-content;
+}
+.pakg_ovr p.h4,.hot_det p.h4,.card-body p.h4
+{
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h5
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4A4747;
+}
+h6
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333333;
+}
+.day1,.day2,.day3,.day4,.day5,.day6
+{
+    border-style: outset;
+    border-color: #1a1a1a;
+    width: 80px;
+    border-width: 10px;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 50px;
+    color:#f0efef;
+    font-weight: bolder;
+    background-color: #2196f3;
+    cursor: pointer;
+}
+#content2,#content3,#content4,#content5,#content6
+{
+    display: none;
+}
+li
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ------------------------------------TIMELINE STARTS HERE----------------------------- */
+.card
+{
+    width: 55%;
+}
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin-left: 100px;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+/* ----------------------------TIMELINE DOTS EFFECT STARTS----------------------- */
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+/* ----------------------------TIMELINE DOTS EFFECT ENDS----------------------- */
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+.timeline li
+{
+    margin-top: -20px;
+}
+/* ------------------------------------TIMELINE ENDS HERE----------------------------- */
+
+
+/* -------------------------ADDITIONAL INFO STARTS-------------------------------- */
+.add_info
+{
+    font-style:normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.add_info p.h5
+{
+    font-weight: bolder;
+}
+/* -------------------------ADDITIONAL INFO ENDS-------------------------------- */
+
+/* -------------------------PACKAGE FORM STARTS-------------------------------- */
+.form-div
+{
+    background-image: url(form_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form
+{
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkgreen;
+    margin-top: 15px;
+    width: 500px;
+    margin-left: 1000px;
+    background-color: #a3a3a3;
+}
+label
+{
+    font-weight: bold;
+}
+.col .h4
+{
+    background-color: #b5f5bc;
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.form-control
+{
+    width: 250px;
+}
+.row
+{
+    margin-left: 20px;
+}
+#button1
+{
+    margin-left: 100px;
+}
+
+/* -------------------------PACKAGE FORM ENDS-------------------------------- */
+
+
+/* -----------------------------------------MAIN CONTENT ENDS---------------------------------- */
+
+
+.copy {
+    
+    padding: 12px;
+}
+.cpy_rght {
+    color: #c3c2c2;
+    padding: 6px 20px;
+    font-size: 14px;
+    background-color: #383838;
+}
+
+
+/*.............FOOTER CODE STARTS..............*/
+.clr {
+    clear: both;
+}
+
+object {
+    width: 100%;
+    height: 571px
+}
+
+.ftnewnovmain {
+    width: 100%;
+    border-bottom: 0.5px solid #4A4747;
+    padding: 10px 0 10px;
+    height: 322px
+}
+
+.flxwrp {
+    flex-wrap: wrap;
+}
+
+.neftbg {
+    background: #1a1a1a;
+}
+
+.ftnew {
+    display: flex;
+}
+
+.footer_newnov {
+    width: 95%;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+
+.leftfotmenu {
+    width: 20%;
+    margin: 0;
+    padding: 0 9px 0 0;
+}
+
+.rightfotmenu {
+    width: 75%;
+    padding: 0 20px;
+}
+
+.leftfotmenu li {
+    color: #fff;
+    list-style: none;
+    margin: 0 0;
+    padding: 6px 12px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    align-content: space-between;
+    position: relative;
+    font-size: 14px;
+    border-bottom: 0.2px solid #e60505;
+}
+
+.leftfotmenu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.leftfotmenu ul {
+    margin: 0;
+    padding: 0 16px 0 0;
+}
+
+.menulinkx {
+    width: 100%;
+    padding: 0;
+}
+
+.bottom_brdr {
+    width: 100%;
+}
+
+.dark_clr {
+    background: #4263c1;
+    width: 24%;
+    float: left;
+    height: 11px;
+}
+
+.light_clr {
+    background: #468be8;
+    width: 76%;
+    float: left;
+    height: 11px;
+}
+
+.menulinkx ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menulinkx li {
+    color: #ffffff;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    width: 25%;
+}
+
+.menulinkx li a {
+    color: #ffffff;
+    padding: 5px 0;
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logomtwht {
+    width: 67%;
+    padding: 10px 29px 0 0;
+}
+
+.newftlogo {
+    padding: 15px 0 0;
+}
+
+.contenht {
+    color: #fff;
+    font-size: 13px;
+    width: 100%;
+}
+
+.hedingemt {
+    padding: 10px 0 15px;
+    color: #ffffff;
+}
+
+.apiconh {
+    width: 43%;
+}
+
+.qdrt {
+    width: 44%;
+}
+
+.qdrt img {
+    width: 80%;
+}
+
+.apiconh img {
+    width: 90%;
+}
+
+.logoandmtwht {
+    width: 30%;
+    padding: 0 27px;
+}
+
+.nhy {
+    width: 30px;
+    height: 3px;
+    display: block;
+    background: #3183ED;
+    margin: 8px 0 0;
+}
+
+.logoqrmtwht {
+    width: 15%;
+    margin-left: auto;
+}
+
+.novftlast {
+    border-top: 0.5px solid #4A4747;
+    padding: 12px 15px;
+}
+
+.ndertimhgt {
+    margin-left: auto;
+    padding: 0 20px;
+    width: 42%;
+}
+
+.logowhtyu {
+    width: 21%;
+}
+
+.neftr {
+    background: #f00;
+    padding: 2px 6px;
+    font-size: 7px;
+    text-transform: uppercase;
+    margin: 0 15px;
+    border-radius: 2px;
+    top: 11px;
+    position: absolute;
+    transform: skew(-20deg);
+    left: 52px;
+}
+
+.ndertimhgt img {
+    width: 100%;
+}
+
+.logowhtyu img {
+    width: 100%;
+    margin-left: -8px;
+}
+
+.ndert {
+    color: #707070;
+    padding: 6px 20px;
+    font-size: 14px;
+    width: 20%;
+}
+
+.leftfotmenu li:last-child {
+    border-bottom: none;
+}
+
+.iconsocialimg {
+    width: 25px;
+    margin: 2px 5px 0 0;
+}
+
+.container_newsletter {
+    width: 99%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: rgb(89 89 89 / 25%);
+    margin: 25px auto 10px 0;
+    border-radius: 7px;
+}
+
+.content_newsletter {
+    width: 398px;
+    height: 40px;
+    box-shadow: 2px 4px 10px rgb(0 0 0 / 20%);
+    border-radius: 60px;
+    overflow: hidden;
+    margin-left: 36px;
+}
+
+.subscribe__title {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 3px
+}
+
+.subscribe__copy {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription .add-email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 0 0 20px;
+}
+
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 112px;
+    border: none;
+    border-radius: 60px;
+    outline: none;
+    margin: 1px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #2196f3;
+    color: #FFFFFF;
+    transition: width .35s ease-in-out, background .35s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.subscription.done .submit-email {
+    width: calc(100% - 2px);
+    background: #00b144;
+}
+
+.subscription .submit-email .before-submit, .subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit, .subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+    transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit, .subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lastelement {
+    color: #fff;
+    list-style: none;
+    margin: 0 0;
+    padding: 7px 12px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    align-content: space-between;
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+} */
+/*.............................LEFT LINK STYLED..............................*/
+ .ovrtb:hover,.quitb:hover,.popltb:hover,.interytb:hover,.polairtb:hover,.connttb:hover,.offertb:hover,.emtyutb:hover{
+    background: #2196f3!important;
+    border-radius: 5px 0 0 5px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.ovrtb:hover::after,.quitb:hover::after,.popltb:hover::after,.interytb:hover::after,.polairtb:hover::after,.connttb:hover::after,.offertb:hover::after,.emtyutb:hover::after
+{
+    border-right: 23px solid #2196f3;
+    border-bottom: 23px solid transparent;
+    position: absolute;
+    content: '';
+    right: -11px;
+    top: 4px;
+    transform: rotate(45deg);
+    display: block;
+}
+
+.f-para {
+    display: block;
+    width: 100%;
+    color: #03b618;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 850px) {
+    #footerpage object {
+        width:100%;
+        height: auto
+    }
+
+    .footer_newnov {
+        display: none;
+    }
+
+    .ndertimhgt {
+        display: none;
+    }
+
+    .ndert {
+        color: #ffffff;
+        padding: 6px 20px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ftnewnovmain {
+        height: auto
+    }
+}
+/*.............FOOTER CODE ENDS..............*/
